@@ -1,0 +1,32 @@
+.intro {
+  background: #ECE9EE;
+  height: 100%;
+  padding: 12em 4em;
+  text-align: center;
+  border-top: 7px solid #FF606E; }
+
+@media screen and (max-width: 767px) {
+  .intro {
+    padding: 7em 1em; } }
+.title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 80px;
+  color: #517398; }
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 3em; } }
+.subtitle {
+  font-family: 'Average', sans-serif;
+  font-size: 18px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 40px 0 40px;
+  border-color: #ECE9EE transparent transparent transparent;
+  margin: 0 auto;
+  margin-top: -2px; }
+
+/*# sourceMappingURL=main.css.map */
