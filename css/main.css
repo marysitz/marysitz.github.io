@@ -1,36 +1,54 @@
-.intro {
-  background: #ECE9EE;
-  height: 100%;
-  padding: 12em 4em;
-  text-align: center;
-  border-top: 7px solid #FF606E; }
+/*
+Error: Invalid CSS after "  text-align": expected ";", was ": center;"
+        on line 19 of main.scss
 
-/*@media screen and (max-width: $screen-xs-max) {
-  .intro {
-    padding: 8em 1em;
-  }
-}*/
-.title {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 80px;
-  color: #517398; }
+14: 
+15: .intro {
+16: 	background: $background-blue;
+17:   height: 100%;
+18:   padding: 30px 20px
+19:   text-align: center;
+20:   border-top: 7px solid $pink;
+21: }
+22: 
+23: /*@media screen and (max-width: $screen-xs-max) {
+24:   .intro {
 
-/*@media screen and (max-width: $screen-xs-max) {
-  .title {
-    font-size: 5em;
-  }  
-}*/
-.subtitle {
-  font-family: 'Average', sans-serif;
-  font-size: 18px; }
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 40px 0 40px;
-  border-color: #ECE9EE transparent transparent transparent;
-  margin: 0 auto;
-  margin-top: -2px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+main.scss:19
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1098:in `expected'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1093:in `tok!'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:758:in `block in try_declaration'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `call'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1138:in `rethrow'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:763:in `try_declaration'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:658:in `block_child'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:639:in `block'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:650:in `block_contents'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `call'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `_process_changes'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:269:in `block in _wait_for_changes'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'
+/usr/local/lib/ruby/gems/2.2.0/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  text-align\": expected \";\", was \": center;\"\A         on line 19 of main.scss\A \A 14: \A 15: .intro {\A 16: 	background: $background-blue;\A 17:   height: 100%;\A 18:   padding: 30px 20px\A 19:   text-align: center;\A 20:   border-top: 7px solid $pink;\A 21: }\A 22: \A 23: /*@media screen and (max-width: $screen-xs-max) {\A 24:   .intro {"; }
