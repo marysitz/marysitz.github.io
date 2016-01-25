@@ -1,16 +1,16 @@
 .intro {
   background: #ECE9EE;
-  height: 100%;
-  padding: 30px 20px;
+  padding: 50px 20px;
   text-align: center;
-  border-top: 7px solid #FF606E; }
+  border-top: 7px solid #FF606E;
+  min-height: 500px; }
 
 /*@media screen and (max-width: $screen-xs-max) {
   .intro {
     padding: 8em 1em;
   }
 }*/
-.title {
+.title h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 80px;
   color: #517398; }
@@ -20,7 +20,7 @@
     font-size: 5em;
   }  
 }*/
-.subtitle {
+.subtitle h2 {
   font-family: 'Average', sans-serif;
   font-size: 18px; }
 

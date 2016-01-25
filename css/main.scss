@@ -14,10 +14,10 @@ $iphone4-5: 321px;
 
 .intro {
 	background: $background-blue;
-  height: 100%;
-  padding: 30px 20px;
+  padding: 50px 20px;
   text-align: center;
   border-top: 7px solid $pink;
+  min-height: 500px;
 }
 
 /*@media screen and (max-width: $screen-xs-max) {
@@ -27,7 +27,7 @@ $iphone4-5: 321px;
 }*/
 
 
-.title {
+.title h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 80px;
   color: $title-blue;
@@ -39,7 +39,7 @@ $iphone4-5: 321px;
   }  
 }*/
 
-.subtitle {
+.subtitle h2 {
   font-family: 'Average', sans-serif;
   font-size: 18px;
 }
