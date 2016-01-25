@@ -20,11 +20,11 @@ $iphone4-5: 321px;
   border-top: 7px solid $pink;
 }
 
-@media screen and (max-width: $screen-xs-max) {
+/*@media screen and (max-width: $screen-xs-max) {
   .intro {
-    padding: 7em 1em;
+    padding: 8em 1em;
   }
-}
+}*/
 
 
 .title {
@@ -33,11 +33,11 @@ $iphone4-5: 321px;
   color: $title-blue;
 }
 
-@media screen and (max-width: $screen-xs-max) {
+/*@media screen and (max-width: $screen-xs-max) {
   .title {
-    font-size: 3em;
+    font-size: 5em;
   }  
-}
+}*/
 
 .subtitle {
   font-family: 'Average', sans-serif;

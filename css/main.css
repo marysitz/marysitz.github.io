@@ -5,17 +5,21 @@
   text-align: center;
   border-top: 7px solid #FF606E; }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: $screen-xs-max) {
   .intro {
-    padding: 7em 1em; } }
+    padding: 8em 1em;
+  }
+}*/
 .title {
   font-family: 'Fjalla One', sans-serif;
   font-size: 80px;
   color: #517398; }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: $screen-xs-max) {
   .title {
-    font-size: 3em; } }
+    font-size: 5em;
+  }  
+}*/
 .subtitle {
   font-family: 'Average', sans-serif;
   font-size: 18px; }
