@@ -22,21 +22,21 @@ body {
   .intro-text {
     position: absolute;
     top: 18%; } }
-.title h1 {
+h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 95px;
   color: #517398; }
 
 @media screen and (max-width: 767px) {
-  .title h1 {
+  h1 {
     font-size: 80px; } }
-.subtitle h2 {
+h2 {
   font-family: 'Average', serif;
-  font-size: 22px;
+  font-size: 28px;
   margin-top: 0; }
 
 @media screen and (max-width: 767px) {
-  .subtitle h2 {
+  h2 {
     font-size: 18px; } }
 .intro-triangle {
   width: 0;
@@ -86,6 +86,7 @@ body {
     box-shadow: 0px 1px 0px 0px #262C3A;
     font-family: 'Fjalla One', sans-serif;
     font-size: 17px;
+    line-height: 2.4;
     background-color: #FF606E;
     background-image: -webkit-linear-gradient(#FF606E, #E55663);
     background-image: linear-gradient(#FF606E, #E55663); }
@@ -109,11 +110,38 @@ body {
   border-color: white transparent transparent;
   position: relative;
   top: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 100; }
 
 .outro {
-  min-height: 400px;
+  min-height: 200px;
   background-color: #ECE9EE;
-  border-bottom: 7px solid #FF606E; }
+  border-bottom: 7px solid #FF606E;
+  position: relative; }
+
+.outro-text {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translateX(50%); }
+
+.outro-title {
+  font-size: 24px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #262C3A; }
+
+.social-icons {
+  text-align: center; }
+
+.fa-social {
+  font-size: 35px;
+  text-align: center;
+  color: #517398; }
+
+.fa-envelope {
+  margin-right: 5px; }
+
+.fa-linkedin-square {
+  margin-left: 5px; }
 
 /*# sourceMappingURL=main.css.map */
