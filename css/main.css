@@ -1,3 +1,7 @@
+body {
+  font-family: 'Average', serif;
+  font-size: 18px; }
+
 .intro {
   background: #ECE9EE;
   text-align: center;
@@ -27,14 +31,14 @@
   .title h1 {
     font-size: 80px; } }
 .subtitle h2 {
-  font-family: 'Average', sans-serif;
+  font-family: 'Average', serif;
   font-size: 22px;
   margin-top: 0; }
 
 @media screen and (max-width: 767px) {
   .subtitle h2 {
     font-size: 18px; } }
-.triangle {
+.intro-triangle {
   width: 0;
   height: 0;
   border-style: solid;
@@ -42,5 +46,74 @@
   border-color: #ECE9EE transparent transparent transparent;
   margin: 0 auto;
   margin-top: -2px; }
+
+.projects {
+  margin-top: 10px;
+  text-align: center; }
+  .projects .project-block {
+    margin: 0 auto 30px;
+    padding: 10px 0 40px;
+    border-bottom: 2px solid #FF606E; }
+  .projects .project-title h3 {
+    font-size: 24px;
+    font-family: 'Fjalla One', sans-serif; }
+  .projects .project-text {
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: #F4F1F6;
+    padding: 20px;
+    border-radius: 2px; }
+  .projects .hor {
+    max-width: 350px; }
+  @media screen and (max-width: 350px) {
+    .projects .hor {
+      max-width: 100%; } }
+  .projects .vert {
+    max-width: 450px; }
+  @media screen and (max-width: 450px) {
+    .projects .vert {
+      max-width: 100%; } }
+  .projects .project-btn {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border-radius: 2px;
+    border: 0;
+    margin: 10px auto;
+    color: #262C3A;
+    -webkit-box-shadow: 0px 1px 0px 0px #262C3A;
+    -moz-box-shadow: 0px 1px 0px 0px #262C3A;
+    box-shadow: 0px 1px 0px 0px #262C3A;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 17px;
+    background-color: #FF606E;
+    background-image: -webkit-linear-gradient(#FF606E, #E55663);
+    background-image: linear-gradient(#FF606E, #E55663); }
+  .projects .project-btn:hover {
+    background-color: #FF606E;
+    background-image: -webkit-linear-gradient(#FF606E, #CB4C58);
+    background-image: linear-gradient(#FF606E, #CB4C58); }
+  .projects .project-btn a {
+    color: #262C3A; }
+  .projects .project-btn a:hover {
+    color: #262C3A;
+    text-decoration: none; }
+  .projects .project-last {
+    border-bottom: none; }
+
+.outro-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 40px 0px 40px;
+  border-color: white transparent transparent;
+  position: relative;
+  top: 20px;
+  margin: 0 auto; }
+
+.outro {
+  min-height: 400px;
+  background-color: #ECE9EE;
+  border-bottom: 7px solid #FF606E; }
 
 /*# sourceMappingURL=main.css.map */

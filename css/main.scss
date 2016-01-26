@@ -1,7 +1,11 @@
+@import "bourbon/bourbon";
 $dark-blue: #262C3A;
 $title-blue: #517398;
 $pink: #FF606E;
+$dark-pink:   #E55663;
+$darker-pink: #CB4C58;
 $background-blue: #ECE9EE;
+$background-blue-light: #F4F1F6;
 
 $screen-lg-min: 1200px;
 $screen-md-max: 1199px;
@@ -11,6 +15,10 @@ $screen-sm-min: 768px;
 $screen-xs-max: 767px;
 $iphone4-5: 321px;
 
+body {
+  font-family: 'Average', serif;
+  font-size: 18px;
+}
 
 .intro {
 	background: $background-blue;
@@ -54,7 +62,7 @@ $iphone4-5: 321px;
 }
 
 .subtitle h2 {
-  font-family: 'Average', sans-serif;
+  font-family: 'Average', serif;
   font-size: 22px;
   margin-top: 0;
 }
@@ -65,7 +73,7 @@ $iphone4-5: 321px;
   }  
 }
 
-.triangle {
+.intro-triangle {
   width: 0;
   height: 0;
   border-style: solid;
@@ -73,4 +81,88 @@ $iphone4-5: 321px;
   border-color: $background-blue transparent transparent transparent;
   margin: 0 auto;
   margin-top: -2px;
+}
+
+
+.projects {
+  margin-top: 10px;
+  text-align: center;
+  .project-block {
+    margin: 0 auto 30px;
+    padding: 10px 0 40px;
+    border-bottom: 2px solid $pink;
+
+  }
+  .project-title h3 {
+    font-size: 24px;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .project-text {
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: $background-blue-light;
+    padding: 20px;
+    border-radius: 2px;
+  }
+  .hor {
+    max-width: 350px;
+  }
+  @media screen and (max-width: 350px) {
+  .hor {
+    max-width: 100%;
+  } 
+  }
+  .vert {
+    max-width: 450px;
+  }
+  @media screen and (max-width: 450px) {
+  .vert {
+    max-width: 100%;
+  }  
+  }
+  .project-btn {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border-radius: 2px;
+    border: 0;
+    margin: 10px auto;
+    color: $dark-blue;
+    -webkit-box-shadow: 0px 1px 0px 0px $dark-blue;
+    -moz-box-shadow: 0px 1px 0px 0px $dark-blue;
+    box-shadow: 0px 1px 0px 0px $dark-blue;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 17px;
+    @include linear-gradient($pink, $dark-pink);
+  }
+  .project-btn:hover {
+    @include linear-gradient($pink, $darker-pink);
+  }
+  .project-btn a {
+    color: $dark-blue;
+  }
+  .project-btn a:hover {
+    color: $dark-blue;
+    text-decoration: none;
+  }
+  .project-last {
+    border-bottom: none;
+  }
+}
+
+
+.outro-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 40px 0px 40px;
+  border-color: white transparent transparent;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+}
+.outro {
+  min-height: 400px;
+  background-color: $background-blue;
+  border-bottom: 7px solid $pink;
 }
