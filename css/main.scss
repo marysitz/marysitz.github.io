@@ -14,34 +14,55 @@ $iphone4-5: 321px;
 
 .intro {
 	background: $background-blue;
-  padding: 50px 20px;
   text-align: center;
   border-top: 7px solid $pink;
   min-height: 500px;
+  position: relative;
 }
 
 @media only screen and (max-width: $screen-xs-max) {
   .intro {
-    padding: 30px 10px
+    min-height: 450px;
+  }
+}
+
+.intro-text {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@media only screen and (max-width: 526px) {
+  .intro-text {
+  position: absolute;
+  top: 18%;
   }
 }
 
 
 .title h1 {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 80px;
+  font-size: 95px;
   color: $title-blue;
 }
 
-@media only screen and (max-width: $screen-xs-max) {
-  .title {
-    font-size: 30px;
+@media screen and (max-width: $screen-xs-max) {
+  .title h1 {
+    font-size: 80px;
   }  
 }
 
 .subtitle h2 {
   font-family: 'Average', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .subtitle h2{
+    font-size: 18px;
+  }  
 }
 
 .triangle {
